@@ -7,7 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import static com.codeborne.selenide.WebDriverRunner.addListener;
+import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 

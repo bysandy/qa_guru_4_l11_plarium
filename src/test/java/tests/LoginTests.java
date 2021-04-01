@@ -37,7 +37,7 @@ public class LoginTests extends TestBase {
                     .setValue(ConfigHelper.getEmailPassword());
             $(by("data-qa-entity", "auth.send.button")).shouldBe(enabled)
                    .click();
-        )};
+        });
 
         step("Verified that user sees correct page", () ->{
             $(by("data-qa-entity", "choose.close"))
@@ -45,7 +45,7 @@ public class LoginTests extends TestBase {
 
             $(by("data-qa-payload", "{\"title_name\":\"Моя библиотека\"}"))
                     .shouldBe(visible);
-        )};
+        });
 
     }
 }

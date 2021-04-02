@@ -19,7 +19,7 @@ import static io.qameta.allure.Allure.step;
 public class LoginTests extends TestBase {
 
     @Test
-    @DisplayName("Successful Login with Google authorisation")
+    @DisplayName("Successful Login with Email authorisation")
     void loginWithEmail(){
         step("Open home page", () -> open(""));
 

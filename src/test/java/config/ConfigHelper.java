@@ -11,12 +11,8 @@ public class ConfigHelper {
         return getAuthorisationConfig().emailPassword();
     }
 
-    private static AuthorisationConfig getAuthorisationConfig(){
-        return ConfigFactory.newInstance().create(AuthorisationConfig.class, System.getProperties());
-    }
-
-    private static WebConfig getWebConfig() {
-        return ConfigFactory.newInstance().create(WebConfig.class, System.getProperties());
+    public static String getWebUrl() {
+        return getWebConfig().webUrl();
     }
 
     public static String getWebRemoteDriver() {
@@ -24,15 +20,6 @@ public class ConfigHelper {
         return String.format(System.getProperty("web.remote.driver"),
                 getWebConfig().webRemoteDriverUser(),
                 getWebConfig().webRemoteDriverPassword());
-    }
-
-/*    private static AuthorizationConfig getAuthorizationConfig() {
-        return ConfigFactory.newInstance().create(
-                AuthorizationConfig.class, System.getProperties());
-    }*/
-
-    public static String getWebUrl() {
-        return getWebConfig().webUrl();
     }
 
     public static boolean isRemoteWebDriver() {
@@ -47,5 +34,12 @@ public class ConfigHelper {
         return getWebVideoStorage() != null;
     }
 
+    private static AuthorisationConfig getAuthorisationConfig(){
+        return ConfigFactory.newInstance().create(
+                AuthorisationConfig.class, System.getProperties());
+    }
 
+    private static WebConfig getWebConfig() {
+        return ConfigFactory.newInstance().create(WebConfig.class, System.getProperties());
+    }
 }

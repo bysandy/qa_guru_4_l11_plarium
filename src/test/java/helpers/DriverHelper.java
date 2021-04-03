@@ -19,11 +19,11 @@ public class DriverHelper {
          Configuration.startMaximized = true;
 
          if (ConfigHelper.isRemoteWebDriver()) {
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", true);
-            Configuration.browserCapabilities = capabilities;
-            Configuration.remote = ConfigHelper.getWebRemoteDriver();
+             DesiredCapabilities capabilities = new DesiredCapabilities();
+             capabilities.setCapability("enableVNC", true);
+             capabilities.setCapability("enableVideo", true);
+             Configuration.browserCapabilities = capabilities;
+             Configuration.remote = ConfigHelper.getWebRemoteDriver();
         }
      }
 

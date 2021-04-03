@@ -16,7 +16,6 @@ public class TestBase {
     @BeforeAll
     public static void beforeAll(){
         configureDriver();
-
     }
 
     @AfterEach
@@ -28,6 +27,7 @@ public class TestBase {
 //        attachNetwork(); // todo
         attachAsText("Browser console logs", getConsoleLogs());
         if (isVideoOn()) attachVideo(sessionId);
+        System.out.println();
 
         closeWebDriver();
     }

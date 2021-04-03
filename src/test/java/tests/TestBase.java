@@ -26,8 +26,12 @@ public class TestBase {
         attachPageSource();
 //        attachNetwork(); // todo
         attachAsText("Browser console logs", getConsoleLogs());
+        if(System.getProperty("video_storage") != null)
+            attachVideo();
+/*
         if (isVideoOn()) attachVideo(sessionId);
         System.out.println();
+*/
 
         closeWebDriver();
     }

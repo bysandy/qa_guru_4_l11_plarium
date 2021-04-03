@@ -42,6 +42,7 @@ public class AttachmentsHelper {
 
     public static String getWebVideoUrl(String sessionId) {
         try {
+
             return new URL(getWebVideoStorage() + sessionId + ".mp4") + "";
         } catch (MalformedURLException e) {
             e.printStackTrace();

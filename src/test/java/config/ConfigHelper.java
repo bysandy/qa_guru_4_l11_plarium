@@ -27,7 +27,7 @@ public class ConfigHelper {
     }
 
     public static String getWebVideoStorage() {
-        return System.getProperty("video.storage");
+        return System.getProperty("video_storage");
     }
 
     public static boolean isVideoOn() {

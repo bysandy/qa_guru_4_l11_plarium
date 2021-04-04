@@ -1,7 +1,9 @@
 # Test russian version of plarium.com
 ## UI tests:
 :white_check_mark: Login test
+
 :white_check_mark: Main page tests
+
 :white_check_mark: Raid Shadow Legends game's test
 
 ## API tests

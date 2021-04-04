@@ -19,3 +19,8 @@
 
 **Allure Report - it is a flexible lightweight test report tool:**
 ![Allure-reports](src/test/resources/Images/Allure_report.png "Allure reports")
+
+
+
+**Telegram bot**
+![Telegram-bot](src/test/resources/Images/telegram_bot.png "Telegram bot")
